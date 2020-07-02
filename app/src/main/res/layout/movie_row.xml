@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@color/colorAccent">
+
+            <ImageView
+                android:id="@+id/movieImageID"
+                android:background="@android:color/black"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+            
+            <TextView
+                android:textColor="@android:color/white"
+                android:id="@+id/movieTitleID"
+                android:paddingLeft="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/movieImageID"
+                android:text="Movie Title"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/movieImageID"
+                android:layout_below="@id/movieTitleID"
+                android:text="Release Date"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieReleaseID" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieCatID"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:layout_below="@id/movieReleaseID"
+                android:layout_toRightOf="@id/movieImageID"
+                android:text="Category" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
